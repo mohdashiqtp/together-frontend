@@ -41,6 +41,7 @@ function App() {
               <Route path='/' element={< Home />} /> 
             <Route path='/chats:id' element={<Chats/>} />
                 <Route path='/singup' element={<Singup />} />
+                    <Route path='/login' element={<Login />} />
             <Route path='/friends:id' element={ <Friends /> } />
             <Route path='/edit_profile' element={ <EditProfile /> } />
 
