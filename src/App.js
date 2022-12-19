@@ -25,14 +25,14 @@ function App() {
           <Route path='/singup' element={<Singup />} />
 
 {
-  if(login){
+  login ?
     
     <Route path='/' element={< Home />} /> 
   
-  } else {
+  :
      <Route path='/login' element={<Login />} />
     
-  }
+  
 
 }
 
