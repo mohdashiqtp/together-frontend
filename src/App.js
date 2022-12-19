@@ -23,12 +23,8 @@ function App() {
         <Routes>
 
           <Route path='/singup' element={<Singup />} />
-          
 
-       
-
-
-            <Route path='/' element={< Login />} /> 
+            { login &&   <Route path='/' element={< Home />} /> }
             <Route path='/login' element={<Login />} />
 
             <Route path ='/profile' element={<Profile/>}/>
