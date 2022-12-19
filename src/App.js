@@ -23,13 +23,13 @@ function App() {
         <Routes>
 
           <Route path='/singup' element={<Singup />} />
-          <Route path='/login' element={<Login />} />
+          
 
           { login ?
 
 
             <Route path='/' element={< Home />} /> 
-            : alert('please Login') }
+            :<Route path='/login' element={<Login />} />}
 
             <Route path ='/profile' element={<Profile/>}/>
             <Route path='/chats:id' element={<Chats/>} />
