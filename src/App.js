@@ -12,7 +12,7 @@ function App() {
 
   const singup = localStorage.getItem('singup')
 
-  const login = true
+  const login = localStorage.getItem("login")
 
  
 
@@ -24,8 +24,18 @@ function App() {
 
           <Route path='/singup' element={<Singup />} />
 
-            { login &&   <Route path='/' element={< Home />} /> }
-            <Route path='/login' element={<Login />} />
+{
+  if(login){
+    
+    <Route path='/' element={< Home />} /> 
+  
+  } else {
+     <Route path='/login' element={<Login />} />
+    
+  }
+
+}
+
 
             <Route path ='/profile' element={<Profile/>}/>
             <Route path='/chats:id' element={<Chats/>} />
