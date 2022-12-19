@@ -25,11 +25,11 @@ function App() {
           <Route path='/singup' element={<Singup />} />
           
 
-          { login ?
+       
 
 
-            <Route path='/' element={< Home />} /> 
-            :<Route path='/login' element={<Login />} />}
+            <Route path='/' element={< Login />} /> 
+            <Route path='/login' element={<Login />} />
 
             <Route path ='/profile' element={<Profile/>}/>
             <Route path='/chats:id' element={<Chats/>} />
