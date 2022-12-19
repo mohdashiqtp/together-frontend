@@ -10,7 +10,7 @@ function Friend(props) {
 
   useEffect(() => {
 
-            axios.get(`http://localhost:5000/user/infor${props.friends._id}`, {
+            axios.get(`https://mern-together-api.onrender.com/user/infor${props.friends._id}`, {
 
                 headers: {
 

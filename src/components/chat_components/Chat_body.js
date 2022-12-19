@@ -99,7 +99,7 @@ function Chat_body(props) {
 
     try {
 
-      await axios.post('http://localhost:5000/user/conversations/messages/', data)
+      await axios.post('https://mern-together-api.onrender.com/user/conversations/messages/', data)
 
 
     } catch (err) {

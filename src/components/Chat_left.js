@@ -35,7 +35,7 @@ function Chat_left(props) {
 
       try {
 
-        const res = await axios.get(`http://localhost:5000/user/infor${recieverId}`, {
+        const res = await axios.get(`https://mern-together-api.onrender.com/user/infor${recieverId}`, {
 
           headers: {
 

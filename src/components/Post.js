@@ -25,7 +25,7 @@ function Post(props) {
 
     const likeClicked = () => {
 
-        axios.put(`http://localhost:5000/posts/like${props.post._id}/${id}/${props.user._id}`, {
+        axios.put(`https://mern-together-api.onrender.com/posts/like${props.post._id}/${id}/${props.user._id}`, {
 
             headers: {
 
@@ -55,7 +55,7 @@ function Post(props) {
 
         setisComment(true)
 
-        axios.post(`http://localhost:5000/posts/comment${props.post._id}/${id}/${props.user._id}`, {
+        axios.post(`https://mern-together-api.onrender.com/posts/comment${props.post._id}/${id}/${props.user._id}`, {
 
             headers: {
 

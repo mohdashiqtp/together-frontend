@@ -29,7 +29,7 @@ function Singup() {
 
         event.preventDefault()
     
-        axios.post('http://localhost:5000/user/singup'  , { ...user }
+        axios.post('https://mern-together-api.onrender.com/user/singup'  , { ...user }
         , {
             withCredentials:true
         }

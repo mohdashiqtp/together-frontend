@@ -27,7 +27,7 @@ const UserApi = (token) => {
 
 
 
-        axios.get('http://localhost:5000/user/infor' , {
+        axios.get('https://mern-together-api.onrender.com/user/infor' , {
 
             headers: {
 

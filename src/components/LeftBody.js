@@ -22,7 +22,7 @@ function LeftBody() {
 
     useEffect(() => {
 
-        axios.get('http://localhost:5000/friends/friends', {
+        axios.get('https://mern-together-api.onrender.com/friends/friends', {
 
             headers: {
 
@@ -55,7 +55,7 @@ function LeftBody() {
 
             friends.forEach((fr) => {
 
-                axios.get(`http://localhost:5000/user/infor${fr._id}`, {
+                axios.get(`https://mern-together-api.onrender.com/user/infor${fr._id}`, {
 
                     headers: {
 

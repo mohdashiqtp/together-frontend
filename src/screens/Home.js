@@ -34,7 +34,7 @@ function Home() {
 
     useEffect(() => {
 
-        axios.get('http://localhost:5000/user/getall', {
+        axios.get('https://mern-together-api.onrender.com/user/getall', {
 
             headers: {
 
@@ -64,7 +64,7 @@ function Home() {
 
     const peopleClicked = async (user) => {
 
-        axios.post(`http://localhost:5000/friends/addfriend${user._id}/${id}`, {
+        axios.post(`https://mern-together-api.onrender.com/friends/addfriend${user._id}/${id}`, {
 
             headers: {
 
@@ -95,7 +95,7 @@ function Home() {
         try {
 
 
-            const result = await axios.get("http://localhost:5000/user/search", search)
+            const result = await axios.get("https://mern-together-api.onrender.com/user/search", search)
 
             console.log(result)
 

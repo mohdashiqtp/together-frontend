@@ -29,7 +29,7 @@ function Chats() {
 
   useEffect(() => {
 
-    axios.get('http://localhost:5000/user/getall', {
+    axios.get('https://mern-together-api.onrender.com/user/getall', {
 
       headers: {
 
@@ -64,7 +64,7 @@ function Chats() {
       try {
 
 
-        const res = await axios.get(`http://localhost:5000/user/coversations/${id}`, {
+        const res = await axios.get(`https://mern-together-api.onrender.com/user/coversations/${id}`, {
 
           headers: {
 
@@ -108,7 +108,7 @@ function Chats() {
 
     try {
 
-      axios.post('http://localhost:5000/user/coversations', members, {
+      axios.post('https://mern-together-api.onrender.com/user/coversations', members, {
 
         headers: {
 

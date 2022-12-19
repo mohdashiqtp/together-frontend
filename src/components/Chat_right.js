@@ -34,7 +34,7 @@ function Chat_right(props) {
 
       try {
 
-        const res = await axios.get(`http://localhost:5000/user/conversations/messages/${props.conversation._id}`)
+        const res = await axios.get(`https://mern-together-api.onrender.com/user/conversations/messages/${props.conversation._id}`)
 
         setChat(res.data.message)
 
@@ -52,7 +52,7 @@ function Chat_right(props) {
 
       try {
 
-        const res = await axios.get(`http://localhost:5000/user/infor${recieverId}`, {
+        const res = await axios.get(`https://mern-together-api.onrender.com/user/infor${recieverId}`, {
 
           headers: {
 

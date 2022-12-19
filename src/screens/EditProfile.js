@@ -44,7 +44,7 @@ function EditProfile() {
     
     try {
 
-      const res = axios.post(`http://localhost:5000/user/edit_profile `, formData, {
+      const res = axios.post(`https://mern-together-api.onrender.com/user/edit_profile `, formData, {
 
         withCredentials: true
   

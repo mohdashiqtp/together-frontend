@@ -12,7 +12,7 @@ function Messages(props) {
 
     const getProfile =  async () => {
 
-      const res = await axios.get(`http://localhost:5000/user/infor${props.message.sender}`, {
+      const res = await axios.get(`https://mern-together-api.onrender.com/user/infor${props.message.sender}`, {
   
         withCredentials: true
   
