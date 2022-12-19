@@ -12,7 +12,7 @@ function App() {
 
   const singup = localStorage.getItem('singup')
 
-  const login = localStorage.getItem('login')
+  const login = true
 
  
 
