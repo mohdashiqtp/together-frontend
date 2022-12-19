@@ -22,7 +22,7 @@ function App() {
 
         <Routes>
 
-          <Route path='/singup' element={<Singup />} />
+        
 
 {
   login ?
@@ -38,7 +38,9 @@ function App() {
 
 
             <Route path ='/profile' element={<Profile/>}/>
+              <Route path='/' element={< Home />} /> 
             <Route path='/chats:id' element={<Chats/>} />
+                <Route path='/singup' element={<Singup />} />
             <Route path='/friends:id' element={ <Friends /> } />
             <Route path='/edit_profile' element={ <EditProfile /> } />
 
